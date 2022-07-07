@@ -1,0 +1,92 @@
+<!DOCTYPE html> <!-- informa al navegador que version de html estamos usando, es importante --> 
+<html lang="en"> <!-- El lang marca el idioma (ingles)-->
+<head><!-- Aqui van enlaces y demas cosas que usara la pagina pero que no necesariamente seran visualizados (es el detras de escena) -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafio final NUCBA</title>
+  <link rel="stylesheet" href="index.css"> <!--link al archivo CSS -->
+  <script src="https://kit.fontawesome.com/810ee6fdcd.js" crossorigin="anonymous"></script> <!--link a fontawesome-->
+</head>
+<body>
+    <header>
+        <div class="container">
+            <p class="logo">Animal world</p>
+            <nav>
+             <a href="#our_animals">Photos</a>
+             <a href="#log">Login</a>
+             <a href="#reg">Registration</a>
+             <a href="#form-contact">Contacto</a>    
+            </nav>
+        </div>
+    </header>
+    <section class="hero">
+        <h1>DISCOVER <br> THE ANIMAL WORLD</h1>
+    </section>
+    <section id="our_animals">
+    <div class="elephant">
+        <h3>The elephant</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit odit dolorum aperiam voluptatem tempora obcaecati earum nisi temporibus, nemo labore! Magni ratione veniam eaque laborum. Et perspiciatis delectus maxime officia.</p>
+        <button>+ Info</button>
+    </div>    
+    <div class="penguin">
+        <h3>The penguin</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit odit dolorum aperiam voluptatem tempora obcaecati earum nisi temporibus, nemo labore! Magni ratione veniam eaque laborum. Et perspiciatis delectus maxime officia.</p>
+        <button>+ Info</button>
+    </div>
+    <div class="hedgehog">
+        <h3>The hedgehog</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit odit dolorum aperiam voluptatem tempora obcaecati earum nisi temporibus, nemo labore! Magni ratione veniam eaque laborum. Et perspiciatis delectus maxime officia.</p>
+        <button>+ Info</button>
+    </div>
+    <div class="giraffes">
+        <h3>The giraffes</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit odit dolorum aperiam voluptatem tempora obcaecati earum nisi temporibus, nemo labore! Magni ratione veniam eaque laborum. Et perspiciatis delectus maxime officia.</p>
+        <button>+ Info</button>
+    </div>
+    </section>
+<section id="log">
+    <h2>Welcome user <br> Please Log in</h2>
+    <form action="login">
+        <input id="inp-log" type="email" name="e-mail" id="e-mail" placeholder="Enter your e-mail">
+        <input id="inp-log" type="password" name="password" id="password" placeholder="Enter your password">
+        <input id="btn-log" type="submit" value="Login!">        
+    </form>
+</section>
+
+<section id="reg">
+    <h3>Registration Form</h3>
+    <form action="registration">
+        <input id="inp-reg" type="text" name="nombres" id="nombres" placeholder="Enter your name">
+        <input id="inp-reg" type="text" name="last-name" id="last-name" placeholder="Enter your last-name">
+        <input id="inp-reg" type="email" name="e-mail" id="e-mail" placeholder="Enter your e-mail">
+        <input id="inp-reg" type="password" name="password" id="password" placeholder="Enter your password">
+        <p id="p-reg">I accept the<a href="#" id="p-reg2">Terms and conditions</a></p>
+        <input id="btn-reg" type="submit" value="Register">        
+    </form>
+</section>
+<section id="form-contact">
+    <h2>Contact us!</h2>
+     <p>To join the crazy jungle!</p>
+     <a href="#"><i class="fa fa-phone"></i>11-9999-5555</a>
+     <a href="#"></a> <i class="fa fa-envelope"></i>ejemplo@gmail.com</a>
+    <textarea type="submit" name="send" id="btn-send-contact" cols="30" rows="10" value="send messaje" ></textarea>
+    <input type="submit" value="send" name="send" id="btn-send-contact2">
+
+</section>
+<section id="foot">
+<footer>
+    <p>&COPY;JFV 2022</p>
+    <h2>FOLLOW US</h2>
+    <div id="social_media">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-youtube"></a>
+      </div>
+
+</footer>
+</section>
+</body>
+
+</html>

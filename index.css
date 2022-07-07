@@ -1,0 +1,349 @@
+/*Esta hecho primero para celular y luego para PC*/
+*{
+  box-sizing: border-box;   /*hace que los elementos no crezcan mas del tamaño dado*/
+}
+html{
+    scroll-behavior: smooth; /*HAce que al ir a una seccion no sea tan repentino y sea mas natural*/
+}
+body{
+    margin: 0;
+}
+h1{font-size: 3.5em;}
+h2{font-size: 2.7em;}
+h3{font-size: 2em;
+color: rgb(15, 168, 71);}
+p{font-size: 1.25em;}
+
+button{
+    font-size: 1.75em; /*tamaño de letra*/
+    font-weight: bold;
+    padding: 10px 20px; /*Establece el espacio de relleno requerido por todos los lados de un elemento.*/
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 5);
+    color: rgb(242, 237, 237);
+    background-color: rgb(121, 206, 36);
+    cursor: pointer; /*Pone dedo al cursor*/
+    }
+button:hover{
+    background-color:rgb(55, 95, 16) ; /*Cambia color al apoyarse encima*/
+}
+
+/*Header*/
+
+header{
+    background-color: rgb(245, 230, 230);
+}
+.container{
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: rgb(189, 132, 57);
+    font-size: 1.5em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(17, 17, 17);
+}
+header a:hover{
+    color: rgb(130, 241, 18);
+}
+
+/*HERO*/
+
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh; /*Ocupa el 90% de la pantalla*/
+    color: rgb(217, 152, 67);
+    background-image: linear-gradient(
+        0deg, 
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5) /*Con esto se le da un toque negro a la imagen contra el texto (queda mejor)*/
+        ),
+        url("./Images/cinereous.jpg");
+    background-repeat: no-repeat; /*Para que no se repita la imagen*/
+    background-size: cover; /*Para que se adapte al contenedor (lo cubra)*/
+    background-position: center center; /*centra la imagen de lados y de arriba*/
+}
+
+/*Fotos*/
+#our_animals{
+    text-align: center;
+    padding: 50px 12px;
+    background-color: rgb(30, 30, 30);
+    color: rgb(255, 252, 252);
+    }
+.elephant{
+    background-image: linear-gradient(
+        0deg, 
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5) /*Con esto se le da un toque negro a la imagen contra el texto (queda mejor)*/
+        ),
+        url("./Images/Elephant.jpg");
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center center; 
+    border-radius: 15px; 
+}
+.penguin{
+    background-image: linear-gradient(
+        0deg, 
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5) /*Con esto se le da un toque negro a la imagen contra el texto (queda mejor)*/
+        ),
+        url("./Images/Penguin.webp");
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center center;
+    border-radius: 15px; 
+}
+.hedgehog{
+    background-image: linear-gradient(
+        0deg, 
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5) /*Con esto se le da un toque negro a la imagen contra el texto (queda mejor)*/
+        ),
+        url("./Images/hedgehog.jpg");
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center center; 
+    border-radius: 15px; 
+}
+.giraffes{
+    background-image: linear-gradient(
+        0deg, 
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5) /*Con esto se le da un toque negro a la imagen contra el texto (queda mejor)*/
+        ),
+        url("./Images/giraffes.jpg");
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center center; 
+    border-radius: 15px; 
+}
+/*FORM*/
+/*Log in*/
+#log{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh; 
+    background-image: linear-gradient(
+        0deg, 
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5) 
+        ),
+        url("./Images/lions.jpg");
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center center; 
+}
+#log h2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    color: aliceblue;  
+    font-weight:bold ;
+}
+#inp-log{
+    display: flex;
+    flex-direction: column;
+    width: 30ch; /*hacemos los campos de texto mas grandes*/
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    background-color: #5D2E26;
+    margin-bottom: 16px; /*separamos los casilleron entre ellos*/
+}
+
+#btn-log{
+    width: 100%;
+    border: none;
+    padding: 12px;
+    color: rgb(228, 226, 226);
+    background-color: rgb(53, 171, 32);
+    margin: 16px 0;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#btn-log:hover{
+    color: rgb(32, 51, 13);
+}
+
+
+
+
+
+/*Reg*/
+#reg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh; 
+    background-image: linear-gradient(
+        0deg, 
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5) 
+        ),
+        url("./Images/jungle.jpg");
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center center; 
+}
+#reg form{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;  
+}
+#inp-reg{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    background-color: #516216;
+    margin-bottom: 16px; /*separamos los casilleron entre ellos*/
+
+}
+#p-reg{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(210, 204, 204);
+    }
+#p-reg2{padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(210, 204, 204);}
+
+#p-reg2:hover{
+    color: rgb(236, 229, 229);
+    text-decoration: underline;
+}
+#btn-reg{
+    width: 100%;
+    border: none;
+    padding: 12px;
+    color: rgb(228, 226, 226);
+    background-color: rgb(25, 88, 14);
+    margin: 16px 0;
+    font-size: 16px;
+    cursor: pointer;
+}
+#btn-reg:hover{
+    color: rgb(42, 71, 12);
+}
+/*Contacto*/
+#form-contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh; 
+    background-image: linear-gradient(
+        0deg, 
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5) 
+        ),
+        url("./Images/kingfisher-881594_1280.jpg");
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center center; 
+    color: #dbd1d1;
+    font-weight: 800;
+}
+#btn-send-contact{background-color: #0B5362;
+color: #dbd1d1;
+font-size: x-large;
+border-radius: 8px;
+border: none;}
+
+#btn-send-contact2{
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    color: rgb(228, 226, 226);
+    background-color: rgb(25, 88, 14);
+    margin: 16px 0;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#btn-send-contact2:hover{
+    color: rgb(42, 71, 12);
+}
+
+/*FOOTER*/
+#foot{
+   display: flex;
+   justify-content: center;
+    align-items:center ;
+    background-color: rgb(78, 78, 78); 
+    color: #dbd1d1;
+    font-weight: 800;
+}
+footer p{
+    display: flex;
+    justify-content: center;
+    color: rgb(225, 214, 214);
+}
+
+footer h2{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    height: 10px;
+    color: #dbd1d1;
+}
+
+#social_media{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 10px;
+    size: 20em;
+    padding-bottom: 15px;
+}
+
+/*Cuando la pantalla tenga mas de 720px se aplica esto*/
+@media (min-width: 720px){ 
+    header{
+        position: fixed; /*Hace que el header permanezca arriba todo el tiempo a medida que vas por la web*/
+        width: 100%;
+    }
+    header.container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+}
