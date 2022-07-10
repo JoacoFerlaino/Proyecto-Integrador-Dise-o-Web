@@ -23,6 +23,7 @@ button{
     color: rgb(242, 237, 237);
     background-color: rgb(121, 206, 36);
     cursor: pointer; /*Pone dedo al cursor*/
+    margin-bottom: 10px;
     }
 button:hover{
     background-color:rgb(55, 95, 16) ; /*Cambia color al apoyarse encima*/
@@ -175,7 +176,7 @@ header a:hover{
     padding: 8px;
     border-radius: 8px;
     border: none;
-    background-color: #5D2E26;
+    background-color: #a67a72;
     margin-bottom: 16px; /*separamos los casilleron entre ellos*/
 }
 
@@ -227,7 +228,7 @@ header a:hover{
     padding: 8px;
     border-radius: 8px;
     border: none;
-    background-color: #516216;
+    background-color: #a0a884;
     margin-bottom: 16px; /*separamos los casilleron entre ellos*/
 
 }
@@ -251,7 +252,7 @@ header a:hover{
     border: none;
     padding: 12px;
     color: rgb(228, 226, 226);
-    background-color: rgb(25, 88, 14);
+    background-color: rgb(53, 171, 32);
     margin: 16px 0;
     font-size: 16px;
     cursor: pointer;
@@ -289,7 +290,7 @@ border: none;}
     padding: 12px;
     border-radius: 8px;
     color: rgb(228, 226, 226);
-    background-color: rgb(25, 88, 14);
+    background-color: rgb(53, 171, 32);
     margin: 16px 0;
     font-size: 16px;
     font-weight: bold;
@@ -327,7 +328,6 @@ footer h2{
     justify-content: space-evenly;
     align-items: center;
     height: 10px;
-    size: 20em;
     padding-bottom: 15px;
 }
 
